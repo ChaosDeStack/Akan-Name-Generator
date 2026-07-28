@@ -27,3 +27,39 @@ const parts = birthdateValue.split("-")
 const year = Number(parts[0]);
 const month = Number(parts[1]);
 const day = Number(parts[2]);
+
+//Add Validation // validate the input
+if (day < 1 || day > 31) {
+    alert("Please enter a valid day (1-31).");
+    return;
+}
+if (month < 1 || month > 12) {
+    alert("Please enter a valid month (1-12).");
+    return;
+}
+if (!genderInput) {
+    alert("Please select a gender.");
+    return;
+}
+
+const gender = genderInput.value;
+
+//calculate the day of the week with the given formula
+const CC = Math.floor(year / 100);
+const YY = year % 100;
+const MM = month;
+const DD = day;
+
+let dayOfWeek = (CC / 4 - 2 * CC - 1 + (5 * YY) / 4 + (26 * (MM + 1)) / 10 + DD) % 7;
+dayOfWeek = Math.floor(dayOfWeek);
+if (dayOfWeek < 0) {
+    dayOfWeek += 7;
+}
+
+//Match the calculated day to Akan name and display the result
+const akanName = akanNames[dayOfWeek][gender];
+const akanDay = akanNames[dayOfWeek].day;
+
+resultSection.classList.remove("hidden");
+akanNameElement.textContent = akanName;
+akanDayElement.textContent = `You were born on a ${akanDay}.`;
