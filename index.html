@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akan Name Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <div>class="container">
+        <header>
+            <h1>Akan Name Generator</h1>
+            <p class="description">
+                In Akan culture, every child is given a traditional "day name" based on the day of the week they were born. Enter your birthdate and gender below to discover your Akan name!
+             </p>
+        </header>
+        <form id="akan-form">
+            <div>class="form-group">
+                <label for="birthdate">Your birthdate</label>
+                <input type ="date" id="birthdate" name="birthdate"required>
+
+            </div>
+
+            <div class="form-group">
+                <label>Gender</label>
+                <div class="radio-group">
+                <label class="radio-option">
+                    <input type="radio" name="gender" value="male" required>
+                    male
+                    </label>
+                    <label class="radio-option">
+                    <input type="radio" name="gender" value="female" required>
+                    female
+                    </label>
+                </div>
+            </div>
+    </div>
+    
+            <button type="submit">Get Akan Name</button>
+        </form>
+
+        <div id="result" class="result"></div>
+    
+        <script src="script.js"></script>
+</body>
+</html>
