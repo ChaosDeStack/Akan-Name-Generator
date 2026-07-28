@@ -16,7 +16,7 @@
              </p>
         </header>
         <form id="akan-form">
-            <div>class="form-group">
+            <div class="form-group">
                 <label for="birthdate">Your birthdate</label>
                 <input type ="date" id="birthdate" name="birthdate"required>
 
@@ -35,12 +35,15 @@
                     </label>
                 </div>
             </div>
-    </div>
     
-            <button type="submit">Get Akan Name</button>
-        </form>
+      <button type="submit" id="submit-btn">Find My Akan Name</button>
+    </form>
 
-        <div id="result" class="result"></div>
+    <section id="result" class="result hidden">
+      <p class="result-label">Your Akan name is</p>
+      <h2 id="akan-name"></h2>
+      <p id="akan-day"></p>
+    </section>
     
         <script src="script.js"></script>
 </body>
