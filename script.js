@@ -55,3 +55,11 @@ dayOfWeek = Math.floor(dayOfWeek);
 if (dayOfWeek < 0) {
     dayOfWeek += 7;
 }
+
+//Match the calculated day to Akan name and display the result
+const akanName = akanNames[dayOfWeek][gender];
+const akanDay = akanNames[dayOfWeek].day;
+
+resultSection.classList.remove("hidden");
+akanNameElement.textContent = akanName;
+akanDayElement.textContent = `You were born on a ${akanDay}.`;
