@@ -8,3 +8,12 @@ const akanNames = [
   { day: "Friday", male: "Kofi", female: "Afua" },
   { day: "Saturday", male: "Kwame", female: "Ama" }
 ];
+
+const form = document.getElementById("akan-form");
+const resultSection = document.getElementById("result");
+const akanNameElement = document.getElementById("akan-name");
+const akanDayElement = document.getElementById("akan-day");
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+});
