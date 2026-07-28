@@ -80,3 +80,51 @@ input[type="date"]:focus {
 .radio-option input {
   cursor: pointer;
 }
+
+#submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: #b45309;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  margin-top: 6px;
+}
+
+#submit-btn:hover {
+  background: #9a4508;
+}
+
+.result {
+  margin-top: 26px;
+  padding: 20px;
+  text-align: center;
+  background: #fff3e0;
+  border-radius: 10px;
+  border: 1px solid #f3d9b1;
+}
+
+.result.hidden {
+  display: none;
+}
+
+.result-label {
+  font-size: 0.9rem;
+  color: #7a5c30;
+  margin-bottom: 4px;
+}
+
+#akan-name {
+  font-size: 2rem;
+  color: #b45309;
+  margin-bottom: 6px;
+}
+
+#akan-day {
+  font-size: 0.9rem;
+  color: #5c4a35;
+}
