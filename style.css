@@ -63,3 +63,20 @@ input[type="date"]:focus {
   outline: none;
   border-color: #b45309;
 }
+
+.radio-group {
+  display: flex;
+  gap: 20px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.radio-option input {
+  cursor: pointer;
+}
